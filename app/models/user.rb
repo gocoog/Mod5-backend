@@ -4,6 +4,7 @@ class User < ApplicationRecord
     
     has_many :goals
     has_many :tasks
+    has_one :wallet
 
     has_secure_password
     validates :email_address, uniqueness: { case_sensitive: false }, presence: true
