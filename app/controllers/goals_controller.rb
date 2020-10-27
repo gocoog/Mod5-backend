@@ -1,5 +1,5 @@
 class GoalsController < ApplicationController
-    before_action :find_goal, only:[:show, :update]
+    before_action :find_goal, only:[:show, :update, :destroy]
 
     def index
         @goals = Goal.all
@@ -23,6 +23,11 @@ class GoalsController < ApplicationController
         @goal.update(goal_params)
         @goal.save
         render json: @goal
+    end
+
+    def destroy
+        @goal.destroy
+        render json: @goals
     end
 
     private

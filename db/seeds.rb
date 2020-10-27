@@ -5,15 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.destroy_all
+# User.destroy_all
 
-p1 = User.create(first_name: "angelo", last_name: "xenakis", email_address: "angelo@mail.com", password: "pass")
+# p1 = User.create(first_name: "John", last_name: "Smith", email_address: "john@mail.com", password: "pass")
 
-p2 = User.create(first_name: "shivvy", last_name: "dave", email_address: "shiv@mail.com", password: "pass")
+# p2 = User.create(first_name: "shivvy", last_name: "dave", email_address: "shiv@mail.com", password: "pass")
 
-c1 = User.create(first_name: "ted", last_name: "neben", email_address: "ted@mail.com", password: "pass", adult: false)
-c2 = User.create(first_name: "will", last_name: "reyes", email_address: "will@mail.com", password: "pass", adult: false)
+# c1 = User.create(first_name: "alex", last_name: "smith", email_address: "alex@mail.com", password: "pass", adult: false)
+# c2 = User.create(first_name: "will", last_name: "smith", email_address: "will@mail.com", password: "pass", adult: false)
 
-p1.children << c1
+# p1.children << c1
+# p1.children << c2
 
-p2.children << c2
+# w1 = Wallet.create
